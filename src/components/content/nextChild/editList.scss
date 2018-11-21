@@ -1,0 +1,13 @@
+.cs-rb-edit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+  box-sizing: border-box;
+  .cs-rb-grid {
+    flex: 1;
+  }
+  .cs-rb-right{
+    border-left: 1px solid #cccccc;
+  }
+}
