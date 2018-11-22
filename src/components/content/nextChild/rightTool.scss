@@ -1,0 +1,26 @@
+.cs-right-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 60%;
+  border-left: 1px solid #ccc;
+  box-sizing: border-box;
+  .cs-rb-top {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    .cs-rb-grid {
+      margin: 10px 0;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      align-content: start;
+    }
+  }
+}

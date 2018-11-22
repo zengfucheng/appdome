@@ -1,26 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+// import LoadPanel from './components/loading/LoadPanel';
+import Routers from './router/index';
+
 import './App.css';
+import 'semantic-ui-css/semantic.min.css';
+
 
 class App extends Component {
+  constructor () {
+    super();
+    this.state = {
+      loading: false
+    }
+    this.clickThis = this.clickThis.bind(this);
+  }
+  clickThis () {
+    this.setState({
+      loading: !this.state.loading
+    })
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className='App'>
+        <Routers/>
       </div>
+
     );
   }
 }

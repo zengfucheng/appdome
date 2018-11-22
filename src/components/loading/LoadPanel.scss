@@ -1,0 +1,15 @@
+.loadBox {
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  z-index: 9999;
+  .loadchild {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
